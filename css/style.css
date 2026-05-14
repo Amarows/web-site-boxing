@@ -158,6 +158,12 @@ footer ul a:hover { color: var(--color-primary); }
 .footer-social a { color: #666; font-size: 1rem; transition: color var(--transition); }
 .footer-social a:hover { color: var(--color-primary); }
 
+
+/* Trainers page – group photo banner */
+.trainers-banner { margin-bottom: 3rem; border-radius: var(--radius); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+.trainers-banner-img { width: 100%; height: 340px; object-fit: cover; object-position: center 20%; display: block; }
+@media (max-width: 768px) { .trainers-banner-img { height: 220px; } }
+
 /* Hero watermark logo */
 .hero-watermark { position: absolute; right: 5%; top: 50%; transform: translateY(-50%); z-index: 1; pointer-events: none; }
 .hero-watermark img { height: 320px; width: auto; opacity: 0.13; mix-blend-mode: luminosity; filter: contrast(1.2); }
