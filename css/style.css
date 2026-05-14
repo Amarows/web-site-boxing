@@ -23,6 +23,7 @@ a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 .container { max-width: var(--max-width); margin: 0 auto; padding: 0 1.25rem; }
 .section { padding: 4rem 0; }
+.section--compact { padding: 2.5rem 0; }
 .section--dark { background: var(--color-dark); color: var(--color-white); }
 .section--light { background: var(--color-light); }
 .section-title { font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 0.5rem; }
@@ -188,7 +189,7 @@ footer ul a:hover { color: var(--color-primary); }
 /* =========================================================
    Membership Pricing Ladder
    ========================================================= */
-.pricing-ladder { margin-top: 2.5rem; }
+.pricing-ladder { margin-top: 1.5rem; }
 
 .pricing-free-banner {
   display: flex;
@@ -287,14 +288,14 @@ footer ul a:hover { color: var(--color-primary); }
 .training-info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 .training-info-card {
   background: var(--color-white);
   border: 2px solid #e0e0e0;
   border-radius: var(--radius);
-  padding: 1.5rem 1.25rem;
+  padding: 1.1rem 1rem;
   text-align: center;
   transition: box-shadow var(--transition), border-color var(--transition);
 }
@@ -302,23 +303,23 @@ footer ul a:hover { color: var(--color-primary); }
   border-color: var(--color-primary);
   box-shadow: 0 4px 16px rgba(204,34,0,0.1);
 }
-.training-info-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+.training-info-icon { font-size: 1.6rem; margin-bottom: 0.5rem; }
 .training-info-label {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--color-primary);
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.25rem;
 }
 .training-info-value {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--color-dark);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 .training-info-sub {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: #888;
 }
 
@@ -331,3 +332,75 @@ footer ul a:hover { color: var(--color-primary); }
   .pricing-free-banner { flex-wrap: wrap; gap: 0.5rem; }
   .training-info-grid { grid-template-columns: 1fr; }
 }
+
+/* =========================================================
+   Tournament section & Instagram embeds
+   ========================================================= */
+.tournament-embed-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.instagram-embed-container {
+  width: 100%;
+  max-width: 540px;
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.instagram-link-fallback {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
+  border-radius: var(--radius);
+  padding: 0.5rem 1.25rem;
+  transition: all var(--transition);
+}
+.instagram-link-fallback:hover { background: var(--color-primary); color: #fff; }
+
+/* Gallery Instagram section */
+.gallery-instagram-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 1.25rem;
+}
+.gallery-instagram-frame {
+  width: 100%;
+  max-width: 900px;
+  border: 1px solid #e0e0e0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fafafa;
+}
+.gallery-instagram-frame iframe {
+  width: 100%;
+  height: 700px;
+  border: none;
+  display: block;
+}
+.gallery-ig-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius);
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: all var(--transition);
+}
+.gallery-ig-cta:hover { background: var(--color-primary); color: #fff; }
