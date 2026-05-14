@@ -72,7 +72,7 @@ const LANG = {
   trainers_hero_sub: 'Experienced, passionate, motivating',
   trainer1_name:  'Shpendi Etemi',
   trainer1_role:  'Trainer',
-  trainer1_bio:  'Shpendi Etemi is a trainer at Boxing Club Ladorishti. Combining years of competition experience with a motivating coaching style.', he combines technical expertise with a motivating coaching style. His focus is on the holistic development of each athlete.',
+  trainer1_bio:  'Shpendi Etemi is a trainer at Boxing Club Ladorishti. Combining years of competition experience with a motivating coaching style, he focuses on the holistic development of each athlete.',
   trainer2_name:  'Shëndrit Dauti',
   trainer2_role:  'Club & Tournament Manager',
   trainer2_bio:  'Shëndrit Dauti manages the club\'s operations and oversees all tournament and competition activities.',
