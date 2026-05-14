@@ -1,5 +1,5 @@
 /* =========================================================
-   Zensportschule Illnau - main.js
+   Boxing Club Ladorishti - main.js
    Handles: language switching, nav highlighting, mobile menu,
             gallery lightbox
    ========================================================= */
@@ -9,7 +9,7 @@
 
   /* -- Language system -- */
   const SUPPORTED = ['de', 'en'];
-  let currentLang = localStorage.getItem('zs_lang') || 'de';
+  let currentLang = localStorage.getItem('bcl_lang') || 'de';
 
   // Detect the base path from the main.js script tag itself (reliable on all hosts)
   const _mainScript = document.querySelector('script[src*="main.js"]');
@@ -52,7 +52,7 @@
   function switchLang(lang) {
     if (!SUPPORTED.includes(lang)) return;
     currentLang = lang;
-    localStorage.setItem('zs_lang', lang);
+    localStorage.setItem('bcl_lang', lang);
     loadLang(lang, applyLang);
   }
 
